@@ -213,6 +213,7 @@ public class ConfirmViewController: UIViewController, UIScrollViewDelegate {
 	
 	internal func cancel() {
 		onComplete?(nil, nil)
+        onComplete = nil
 	}
 	
 	internal func confirmPhoto() {

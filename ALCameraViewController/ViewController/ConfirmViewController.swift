@@ -212,9 +212,8 @@ public class ConfirmViewController: UIViewController, UIScrollViewDelegate {
 	}
 	
 	internal func cancel() {
-        //onComplete = nil
-		//onComplete?(nil, nil)
-        let spinner = showSpinner()
+		onComplete?(nil, nil)
+        onComplete = nil
 	}
 	
 	internal func confirmPhoto() {

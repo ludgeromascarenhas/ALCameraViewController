@@ -211,12 +211,12 @@ public class ConfirmViewController: UIViewController, UIScrollViewDelegate {
 		cancelButton.action = { [weak self] in self?.cancel() }
 	}
 	
-	internal func cancel() {
+	@objc public func cancel() {
 		onComplete?(nil, nil)
         onComplete = nil
 	}
 	
-	internal func confirmPhoto() {
+	@objc public func confirmPhoto() {
 		
 		guard let image = imageView.image else {
 			return

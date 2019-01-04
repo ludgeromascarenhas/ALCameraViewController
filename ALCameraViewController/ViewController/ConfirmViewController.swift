@@ -212,8 +212,10 @@ public class ConfirmViewController: UIViewController, UIScrollViewDelegate {
 	}
 	
 	@objc public func cancel() {
+        print("aqui entrando")
 		onComplete?(nil, nil)
         onComplete = nil
+        print("aqui saindo")
 	}
 	
 	@objc public func confirmPhoto() {
